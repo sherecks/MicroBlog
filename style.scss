@@ -1,7 +1,135 @@
+*, *::after, *::before {
+    font-family: 'IBM Plex Mono', monospace;
+    box-sizing: inherit;
+}
+
 .navbar {
-    max-width: 640px;
+    max-width: 700px;
     margin: 50px auto;
     padding: 0 20px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar--header{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 30px;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style: none;
+}
+
+.item{
+    margin: 30px;
+}
+
+.link{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.input-form{
+    width: 100%;
+}
+
+.label-form{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.exemplo-campo{
+    width: 100%;
+    font-size: 18px;
+}
+
+.enviar-form{
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+.enviar-form:hover{
+    color: rgb(100, 172, 255);
+}
+
+.posts{
+    margin-top: 30px;
+}
+
+.title{
+    display: inline;
+    font-size: 22px;
+}
+
+.conteudo{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+footer{
+    background-color: rgb(133, 133, 133);
+    padding: 40px 0;
+    margin-top: 50px;
+    color: white;
+    border-top: 5px solid black;
+    font-size: 16px;
+}
+
+.container-footer{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.esquerda{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.direita{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna-f{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.item-f{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.item-f:hover{
+    text-decoration: underline;
 }

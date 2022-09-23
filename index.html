@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img src="microblog-logo.svg" alt="Logo do Microblog" />
+    <header class="navbar">
+        <div class="navbar--header">
+            <img src="microblog-logo.svg" class="logo" alt="Logo do Microblog" />Microblog
         </div>
         <ul class="navegacao">
             <li class="item"><a href="#" class="link">Recentes</a></li>
             <li class="item"><a href="#" class="link">Calendario</a></li>
         </ul>
-    
-
     </header>
     <main>
         <section>
             <h1>Postagens Diarías</h1>
             <form action="/entry" method="post">
                 <p class="input-form">
-                    <label>Publique</label>
+                    <label class="label-form">Publique:</label>
                     <textarea name="exemplo" id="entry" class="exemplo-campo"></textarea>
                 </p> 
                 <button type="submit" class="enviar-form">Enviar</button>
             </form>
         </section>
         <section>
-            <h1>Publicados Recentemente</h1>
+            <h1 class="posts">Publicados Recentemente</h1>
             <article>
                 <div>
-                    <h2>Nada de mais</h2>
-                    <time datetime="22-09-2022">Set 22</time>
+                    <h2 class="title">Nada de mais</h2>
+                    <time class="date" datetime="22-09-2022">. Set 22</time>
                 </div>
-                <p>
+                <p class="conteudo">
                     Hoje rendeu nada na prova de Geometria.
                 </p>
             </article>
@@ -48,7 +49,6 @@
         <div class="container-footer">
             <section class="esquerda">
                 <a class="item-f">Construido por João Pedro</a>
-                <a class="item-f">Portfólio <www class="joaopedropn com br"></www></a>
             </section>
             <section class="direita">
                 <div class="coluna-f">
