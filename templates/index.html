@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar--header">
+            <img src="static/microblog-logo.svg" class="logo" alt="Logo do Microblog" />Microblog
+        </div>
+        <ul class="navegacao">
+            <li class="item"><a href="#" class="link">Recentes</a></li>
+            <li class="item"><a href="#" class="link">Calendario</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Postagens Diarías</h1>
+            <form action="/entry" method="post">
+                <p class="input-form">
+                    <label class="label-form">Publique:</label>
+                    <textarea name="exemplo" id="entry" class="exemplo-campo"></textarea>
+                </p> 
+                <button type="submit" class="enviar-form">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <h1 class="posts">Publicados Recentemente</h1>
+            <article>
+                <div>
+                    <h2 class="title">Nada de mais</h2>
+                    <time class="date" datetime="22-09-2022">. Set 22</time>
+                </div>
+                <p class="conteudo">
+                    Hoje rendeu nada na prova de Geometria.
+                </p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <section class="esquerda">
+                <a class="item-f">Construido por João Pedro</a>
+            </section>
+            <section class="direita">
+                <div class="coluna-f">
+                <a class="item-f">Recentes</a>
+                <a class="item-f">Calendario</a>
+                </div>
+                <div class="coluna-f">
+                    <a class="item-f">Sobre</a>
+                    <a class="item-f">Outros Projetos</a>
+                </div>
+            </section>
+        </div>
+    </footer>    
+</body>
+</html>
