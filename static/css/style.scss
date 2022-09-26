@@ -8,6 +8,7 @@ body{
 }
 
 .navbar {
+    max-width: 700px;
     margin: 0 auto;
     margin-bottom: 150px;
     border-radius: 10px;
@@ -15,6 +16,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(133, 133, 133);
+    color: black;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    font-size: 22px;
 }
 
 .navbar--header{
@@ -59,7 +65,7 @@ form{
 }
 
 article{
-    height: 250px;
+    height: 150px;
     margin: 0;
 }
 
@@ -103,30 +109,23 @@ article{
 
 .conteudo{
     font-size: 18px;
-    line-height: 150%;
+    line-height: 150%; 
     color: white;
-}
-
-header{
-    background-color: rgb(133, 133, 133);
-    color: black;
-    font-weight: bold;
-    border-bottom: 5px solid black;
-    font-size: 22px;
 }
 
 footer{
     background-color: rgb(133, 133, 133);
+    margin: 0 auto;
     padding: 40px 0;
     margin-top: 310px;
     border-radius: 10px;
+    max-width: 700px;
     color: white;
     border-top: 5px solid black;
     font-size: 20px;
 }
 
 .container-footer{
-    max-width: 700px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -153,7 +152,7 @@ footer{
 
 .item-f{
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .item-f:hover{
