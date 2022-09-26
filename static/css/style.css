@@ -4,7 +4,11 @@
 }
 
 body {
-  background-image: linear-gradient(to right bottom, #6133c7, #5248d1, #4359d8, #3568dd, #2c75e0, #0d82e3, #008de4, #0098e3, #00a4df, #00aed3, #00b6c2, #00bcaf);
+  background-image: url(static/wallpaper.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
 }
 
 .navbar {
@@ -16,10 +20,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(133, 133, 133);
   color: black;
   font-weight: bold;
-  border-bottom: 5px solid black;
   font-size: 22px;
 }
 
@@ -54,8 +56,11 @@ main {
   margin: 0 auto;
   padding: 0 20px;
   border-radius: 10px;
-  border: 6px solid black;
-  background-color: gray;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(125, 172, 199, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 }
 
 form {
@@ -114,20 +119,20 @@ article {
 }
 
 footer {
-  background-color: rgb(133, 133, 133);
   margin: 0 auto;
-  padding: 40px 0;
-  margin-top: 310px;
+  padding: 15px 0;
+  margin-top: 250px;
   border-radius: 10px;
   max-width: 700px;
   color: white;
-  border-top: 5px solid black;
   font-size: 20px;
 }
 
 .container-footer {
   margin: 0 auto;
-  padding: 0 20px;
+  margin-top: 20px;
+  padding: 0 15px;
+  height: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -152,9 +157,5 @@ footer {
 
 .item-f {
   text-decoration: none;
-  margin-bottom: 15px;
-}
-
-.item-f:hover {
-  text-decoration: underline;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
