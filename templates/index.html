@@ -23,9 +23,9 @@
     <main>
         <section>
             <h1>Postagens Diarías</h1>
-            <form action="/entry" method="post">
+            <form method="post">
                 <p class="input-form">
-                    <label class="label-form">Publique:</label>
+                    <label for="entry" class="label-form">Publique:</label>
                     <textarea name="exemplo" id="entry" class="exemplo-campo"></textarea>
                 </p> 
                 <button type="submit" class="enviar-form">Enviar</button>
@@ -33,15 +33,17 @@
         </section>
         <section>
             <h1 class="posts">Publicados Recentemente</h1>
+            {% for entry in entries %}
             <article>
                 <div>
-                    <h2 class="title">Nada de mais</h2>
-                    <time class="date" datetime="22-09-2022">. Set 22</time>
+                    <h2 class="title">{{ entry[0] | truncate(10, true) }}</h2>
+                    <time class="date" datetime="{{ entry[1] }}">. {{ entry[2] }}</time>
                 </div>
                 <p class="conteudo">
-                    Hoje rendeu nada na prova de Geometria.
+                    {{ entry[0] }}
                 </p>
             </article>
+            {% endfor %}
         </section>
 
     </main>
