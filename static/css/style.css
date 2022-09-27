@@ -1,28 +1,32 @@
 *, *::after, *::before {
   font-family: "IBM Plex Mono", monospace;
   box-sizing: inherit;
+  margin: 0;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-  background-image: url(static/wallpaper.jpg);
+  background-image: url(../wallpaper.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position-x: center;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .navbar {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   border-radius: 10px;
-  padding: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: black;
+  color: white;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .navbar--header {
@@ -46,14 +50,14 @@ body {
 }
 
 .link {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: white;
 }
 
 main {
-  max-width: 550px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 50px auto;
   padding: 0 20px;
   border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
@@ -70,8 +74,12 @@ form {
 }
 
 article {
-  height: 150px;
   margin: 0;
+  margin-bottom: 50px;
+}
+
+.input_title {
+  margin-top: 20px;
 }
 
 .input-form {
@@ -80,11 +88,13 @@ article {
 
 .label-form {
   display: block;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .exemplo-campo {
-  width: 100%;
+  min-width: 595px;
+  max-width: 595px;
   font-size: 18px;
   color: black;
 }
@@ -92,18 +102,28 @@ article {
 .enviar-form {
   font-size: 18px;
   font-weight: bold;
-  border-radius: 10px;
   color: white;
-  background-color: black;
-  border: 2px solid white;
+  transition: 2s;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(125, 172, 199, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 }
 
 .enviar-form:hover {
-  color: rgb(100, 172, 255);
+  transition: 1s;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(125, 172, 199, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  filter: brightness(0%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 }
 
 .posts {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -120,19 +140,18 @@ article {
 
 footer {
   margin: 0 auto;
-  padding: 15px 0;
-  margin-top: 250px;
+  padding: 25px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100%;
   border-radius: 10px;
-  max-width: 700px;
+  max-width: 800px;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .container-footer {
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 0 15px;
-  height: 50px;
   display: flex;
   flex-direction: row;
 }
