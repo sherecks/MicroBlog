@@ -103,7 +103,7 @@ article {
   font-size: 18px;
   font-weight: bold;
   color: white;
-  transition: 2s;
+  transition: 1.5s;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(125, 172, 199, 0.2);
   -webkit-backdrop-filter: blur(20px);
@@ -112,7 +112,7 @@ article {
 }
 
 .enviar-form:hover {
-  transition: 1s;
+  transition: 0.5s;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(125, 172, 199, 0.8);
   -webkit-backdrop-filter: blur(20px);
