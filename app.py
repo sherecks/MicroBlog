@@ -2,7 +2,9 @@ import os
 import datetime
 from flask import Flask, render_template, request
 from pymongo import MongoClient
-from dotenv import load_dotenv
+
+if not os.environ.get("PRODUCTION"):
+    from dotenv import load_dotenv
 
 load_dotenv()
 
