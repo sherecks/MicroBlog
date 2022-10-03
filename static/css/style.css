@@ -20,7 +20,6 @@ body {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 120px;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -177,4 +176,42 @@ footer {
 .item-f {
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+  *, *::after, *::before {
+    font-family: "IBM Plex Mono", monospace;
+    box-sizing: inherit;
+    margin: 0;
+  }
+  html {
+    height: 100%;
+  }
+  .navbar {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .logo {
+    margin-right: 5px;
+  }
+  .item {
+    margin: 15px;
+  }
+  .exemplo-campo {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .link {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  footer {
+    max-width: 300px;
+    font-size: 15px;
+  }
+  main {
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
