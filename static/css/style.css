@@ -30,6 +30,7 @@ body {
 
 .navbar--header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -37,25 +38,19 @@ body {
   margin-right: 30px;
 }
 
-.navegacao {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  list-style: none;
-}
-
 .item {
   margin: 30px;
 }
 
 .link {
+  margin-right: 25px;
   font-size: 25px;
   text-decoration: none;
   color: white;
 }
 
 main {
-  max-width: 600px;
+  max-width: 650px;
   margin: 50px auto;
   padding: 0 20px;
   border-radius: 10px;
@@ -92,8 +87,8 @@ article {
 }
 
 .exemplo-campo {
-  min-width: 595px;
-  max-width: 595px;
+  min-width: 645px;
+  max-width: 645px;
   font-size: 18px;
   color: black;
 }
@@ -190,9 +185,6 @@ footer {
   .navbar {
     max-width: 300px;
     margin: 0 auto;
-  }
-  .logo {
-    margin-right: 5px;
   }
   .item {
     margin: 15px;
